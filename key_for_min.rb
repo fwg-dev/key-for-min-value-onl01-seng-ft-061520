@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
 # key_for_min_value(hash)
 
 
-name_hash.count do |x,y|
- x <=> y
+name_hash.count do |key,value|
+ key <=> value
 end.first[0]
 end
